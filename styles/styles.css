@@ -160,3 +160,10 @@ p {
 a {
   font-size: 1rem;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
