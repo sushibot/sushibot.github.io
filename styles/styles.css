@@ -181,3 +181,9 @@ a {
 }
 
 /**MOBILE STYLES**/
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3.157rem;
+  }
+}
