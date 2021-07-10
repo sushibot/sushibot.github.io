@@ -180,6 +180,14 @@ a {
   padding: 1rem;
 }
 
+.header-container {
+  margin-bottom: 1.5rem;
+}
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /**MOBILE STYLES**/
 
 @media (max-width: 600px) {
