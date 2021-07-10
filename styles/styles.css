@@ -1,6 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
+   RESET CSS
 */
 
 html,
@@ -138,6 +139,17 @@ p,
 a {
   font-family: "Times New Roman", "Helvetica";
 }
+
+html {
+  height: 100%;
+}
+body,
+main {
+  height: inherit;
+}
+
+/**TYPE STYLES**/
+
 h1 {
   font-size: 4.2rem;
 }
@@ -147,23 +159,22 @@ h2 {
 h3 {
   font-size: 2.369rem;
 }
-h4 {
-  font-size: 1.777rem;
-}
-h5 {
-  font-size: 1.333rem;
-}
 
 p {
-  font-size: 1rem;
+  font-size: 1.777rem;
 }
 a {
   font-size: 1rem;
 }
+
+/**ELEMENT STYLES**/
 .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
   max-width: 900px;
+  padding: 1rem;
 }
+
+/**MOBILE STYLES**/
