@@ -137,7 +137,7 @@ h5,
 h6,
 p,
 a {
-  font-family: "Times New Roman", "Helvetica";
+  font-family: "Helvetica";
 }
 
 html {
@@ -145,6 +145,7 @@ html {
 }
 body,
 main {
+  overflow: hidden;
   height: inherit;
 }
 
@@ -162,6 +163,8 @@ h3 {
 
 p {
   font-size: 1.777rem;
+  font-weight: 300;
+  line-height: 2.5rem;
 }
 a {
   font-size: 1rem;
