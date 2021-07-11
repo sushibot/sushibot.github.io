@@ -92,6 +92,9 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+a {
+  text-decoration: none;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -148,7 +151,7 @@ main {
   height: inherit;
 }
 
-/**TYPE STYLES**/
+/**FONT STYLES**/
 
 h1 {
   font-size: 4.2rem;
@@ -182,10 +185,27 @@ a {
 .header-container {
   margin-bottom: 1.5rem;
 }
+
 .main-content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.link-list-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-container {
+  cursor: pointer;
+  border-radius: 4px;
+  width: 450px;
+}
+
+.image {
+  width: 100%;
 }
 /**MOBILE STYLES**/
 
