@@ -204,7 +204,7 @@ a {
   cursor: pointer;
   border-radius: 4px;
   width: 450px;
-  background-image: url("./assets/pros.png");
+  background-image: url("../assets/pros.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
