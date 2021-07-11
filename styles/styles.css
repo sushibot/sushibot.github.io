@@ -204,6 +204,7 @@ a {
   cursor: pointer;
   border-radius: 4px;
   width: 450px;
+  height: 220px;
   background-image: url("../assets/pros.png");
   background-position: center;
   background-size: contain;
