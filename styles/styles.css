@@ -191,7 +191,9 @@ a {
   flex-direction: column;
   align-items: center;
 }
-
+.about-container {
+  margin-bottom: 1rem;
+}
 .link-list-container {
   display: flex;
   align-items: center;
@@ -207,7 +209,7 @@ a {
 .image {
   width: 100%;
 }
-/**MOBILE STYLES**/
+/**BREAKPOINT STYLES**/
 
 @media (max-width: 600px) {
   h1 {
