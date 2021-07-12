@@ -1,33 +1,33 @@
 const project_array = [
   {
-    project_name: "Parks and Recreation Online",
-    href: "https://pros.hnl.info",
-    project_image: "./assets/images/pros.png",
+    project_name: "Lorem Ipsum",
+    href: "#",
+    project_image: "https://via.placeholder.com/450x219?text=Sushibot",
   },
   {
-    project_name: "Parks and Recreation Online",
-    href: "https://pros.hnl.info",
-    project_image: "./assets/images/pros.png",
+    project_name: "Lorem Ipsum",
+    href: "#",
+    project_image: "https://via.placeholder.com/450x219?text=Sushibot",
   },
   {
-    project_name: "Parks and Recreation Online",
-    href: "https://pros.hnl.info",
-    project_image: "./assets/images/pros.png",
+    project_name: "Lorem Ipsum",
+    href: "#",
+    project_image: "https://via.placeholder.com/450x219?text=Sushibot",
   },
   {
-    project_name: "Parks and Recreation Online",
-    href: "https://pros.hnl.info",
-    project_image: "./assets/images/pros.png",
+    project_name: "Lorem Ipsum",
+    href: "#",
+    project_image: "https://via.placeholder.com/450x219?text=Sushibot",
   },
   {
-    project_name: "Parks and Recreation Online",
-    href: "https://pros.hnl.info",
-    project_image: "./assets/images/pros.png",
+    project_name: "Lorem Ipsum",
+    href: "#",
+    project_image: "https://via.placeholder.com/450x219?text=Sushibot",
   },
   {
-    project_name: "Parks and Recreation Online",
-    href: "https://pros.hnl.info",
-    project_image: "./assets/images/pros.png",
+    project_name: "Lorem Ipsum",
+    href: "#",
+    project_image: "https://via.placeholder.com/450x219?text=Sushibot",
   },
 ];
 
