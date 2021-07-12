@@ -8,30 +8,66 @@
     <title>Gabe</title>
   </head>
   <body>
-    <main class="wrapper">
-      <header class="header-container">
-        <p>Hello, I'm</p>
-        <h1>Gabe Fontanilla</h1>
-      </header>
-      <div class="main-content-container">
-        <section class="about-container">
+    <header class="header-container">
+      <h1>Gabriel Fontanilla</h1>
+            <section class="hr-container">
+        <hr />
+      </section>
+      <section
+        style="
+          display: flex;
+          place-content: center space-between;
+          flex-direction: column;
+        "
+      >
+        <div id="about" data-nav="about" class="about-container">
           <p>
-            I am a Front End developer living in Honolulu, Hawaii. I like to
-            build and create things. On my free time, I'm either making music,
-            playing piano, or fishing. Please check out my work below!
+            Hi! You can call me Gabe. I am a Front End developer from Honolulu,
+            Hawai'i. I love to build and create things. On my free time, I'm
+            either making music, playing video games, or snorkeling. Please
+            check out my work below!
           </p>
-        </section>
-        <section>
-          <ol>
-            <li class="link-list-container">
-              <div class="image-container">
-                <!-- <img class="image" src="./assets/pros.png" alt="" /> -->
-              </div>
-              <a href="">Parks and Recreation Online</a>
+        </div>
+        <nav class="nav-container">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <h4 href="#work">Work</a>
             </li>
-          </ol>
+            <li class="nav-item">
+              <h4 href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+    </header>
+
+    <main class="work-container">
+      <div class="main-content-container">
+        <!-- Displays content if JS is disabled -->
+        <noscript>
+          <main class="wrapper">
+            <div class="main-content-container">
+              <section>
+                <ol id="project-links">
+                  <li class="link-list-container">
+                    <div class="image-container"></div>
+                    <a href="https://pros.hnl.info"
+                      >Parks and Recreation Online System</a
+                    >
+                  </li>
+                </ol>
+              </section>
+            </div>
+          </main>
+        </noscript>
+
+        <section id="work" data-nav="projects">
+          <ol id="project-links" class="projects"></ol>
         </section>
       </div>
     </main>
   </body>
+
+  <script src="scripts/index.js"></script>
 </html>
