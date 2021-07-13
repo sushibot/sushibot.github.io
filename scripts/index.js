@@ -37,7 +37,7 @@ const project_array = [
     const project_list_item = document.createElement("li");
     const image_container = document.createElement("a");
     const image = document.createElement("img");
-    const link_item_text = document.createElement("a");
+    const link_item_text = document.createElement("p");
 
     image.src = project.project_image;
     image.className = "image";

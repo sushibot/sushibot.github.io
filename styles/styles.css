@@ -172,7 +172,7 @@ h1 {
   color: #e0fdfd;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 0px 0px 20px rgb(78, 215, 251);
+  text-shadow: 0px 0px 5px rgb(78, 215, 251);
 }
 h2 {
   font-size: 3.157rem;
@@ -237,7 +237,6 @@ hr {
   place-content: center space-around;
 }
 .nav-item {
-  padding: 1rem;
   transition: text-shadow 0.5s ease, color 0.5s ease, font-weight 0.5s ease,
     border-radius 0.5s ease, background 0.5s ease;
   transition: text-shadow 0.5s ease-out, color 0.5s ease, font-weight 0.5s ease,
@@ -281,29 +280,34 @@ hr {
   flex-direction: column;
   width: 100%;
 }
-.link {
-  margin-top: 1.5rem;
-
+/* .link {
   transition: border 0.5s ease, color 0.5s ease, border-radius 0.5s ease;
-  transition: border 0.5s ease-out, color 0.5s ease-out,
-    border-radius 0.5s ease-out;
-}
-.link:hover {
+} */
+/* .link:hover {
   color: rgb(78, 215, 251);
-}
+} */
 .image-container {
   cursor: pointer;
 }
 
 .image {
-  border-radius: 4px;
-  margin-bottom: 1.5rem;
+  border: 1px solid rgb(160, 236, 255);
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
   width: 100%;
-  height: 100%;
+
+  border: 1px solid rgb(160, 236, 255);
+
+  border-radius: 2px;
+  transition: box-shadow 0.5s ease, border 0.5s ease;
+}
+
+.image:hover {
+  box-shadow: 0px 0px 10px rgb(78, 215, 251);
 }
 /**BREAKPOINT STYLES**/
 
-@media screen and (max-width: 599px) and (min-width: 400px) {
+@media screen and (max-width: 599px) and (min-width: 0px) {
   h1 {
     font-size: 2.17rem;
   }
@@ -316,8 +320,11 @@ hr {
     font-size: 1.25rem;
     line-height: 2.25rem;
   }
+  .work-container {
+    height: unset;
+  }
 }
-@media (max-width: 904px) and (min-width: 600px) {
+@media screen and (max-width: 904px) and (min-width: 600px) {
   h1 {
     font-size: 2.77rem;
   }
