@@ -1,10 +1,16 @@
 @font-face {
   font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
   src: url("../assets/fonts/open_sans/OpenSans-Light.ttf"),
     url("../assets/fonts/open_sans/OpenSans-Regular.ttf"),
     url("../assets/fonts/open_sans/OpenSans-Bold.ttf"),
     url("../assets/fonts/open_sans/OpenSans-SemiBold.ttf"),
     url("../assets/fonts/open_sans/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Hylian Serif";
+  src: url("../assets/fonts/hylian_sans/HyliaSerifBeta-Regular.otf");
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -118,12 +124,7 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
-  background-color: #1a1e28;
-  margin: 0 auto;
-  max-width: 900px;
-}
+
 ol,
 ul {
   list-style: none;
@@ -144,7 +145,9 @@ table {
   border-spacing: 0;
 }
 
-h1,
+h1 {
+  font-family: "Hylian Serif";
+}
 h2,
 h3,
 h4,
@@ -166,13 +169,13 @@ main {
 /**FONT STYLES**/
 
 h1 {
-  font-size: 4.209rem;
-  letter-spacing: 0.125rem;
-  font-weight: 100;
-  color: #e0fdfd;
-  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  font-weight: 800;
+  /* color: #e0fdfd; */
+  /* text-transform: uppercase; */
   text-align: center;
-  text-shadow: 0px 0px 5px rgb(78, 215, 251);
+  color: rgb(78, 215, 251);
 }
 h2 {
   font-size: 3.157rem;
@@ -188,8 +191,8 @@ h4 {
   color: #4ed7fb;
 }
 p {
-  font-size: 1.777rem;
-  font-weight: 100;
+  font-size: 1.5rem;
+  font-weight: 300;
   line-height: 2.5rem;
   color: #e0fdfd;
 }
@@ -199,6 +202,13 @@ a {
   color: #e0fdfd;
 
   letter-spacing: 0.125rem;
+}
+/**ELEMENT STYLES**/
+body {
+  line-height: 1;
+  background-color: #1a1e28;
+  margin: 0 auto;
+  max-width: 900px;
 }
 hr {
   background-image: linear-gradient(
@@ -212,7 +222,8 @@ hr {
   border: none;
   width: 100%;
 }
-/**ELEMENT STYLES**/
+/**CLASS STYLES**/
+
 .work-container {
   display: flex;
   flex-direction: column;
@@ -251,6 +262,11 @@ hr {
   cursor: pointer;
   color: rgb(78, 215, 251);
   /* background: rgba(78, 215, 251, 0.2); */
+}
+.background-container {
+  background-image: url("../assets/images/starwheel.svg");
+  background-size: 180%;
+  background-repeat: repeat;
 }
 .header-container {
   display: flex;
@@ -328,4 +344,30 @@ hr {
   h1 {
     font-size: 2.77rem;
   }
+}
+
+:root {
+  --background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
+  --first: #53f;
+  --second: #4553ff;
+  --third: #4f40ff;
+  --fourth: #25ddf5;
+  --fifth: #1fa2ff;
+}
+#stripes {
+  width: 100%;
+  height: 1vw;
+  background: var(--background);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  transform: skewY(21deg);
+  transform-origin: 0;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+#stripes span:nth-child(1) {
+  grid-column: span 1;
+  background: var(--first);
 }
