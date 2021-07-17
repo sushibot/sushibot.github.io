@@ -1,18 +1,20 @@
 @font-face {
   font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
   src: url("../assets/fonts/open_sans/OpenSans-Light.ttf"),
     url("../assets/fonts/open_sans/OpenSans-Regular.ttf"),
     url("../assets/fonts/open_sans/OpenSans-Bold.ttf"),
     url("../assets/fonts/open_sans/OpenSans-SemiBold.ttf"),
     url("../assets/fonts/open_sans/OpenSans-ExtraBold.ttf");
 }
-@font-face {
-  font-family: "Hylian Serif";
-  src: url("../assets/fonts/hylian_sans/HyliaSerifBeta-Regular.otf");
+:root {
+  --primary-base: #4ed7e4;
+  --neutral-light: #fff;
+  --neutral-dark: #1a1e28;
+  --second: #4553ff;
+  --third: #4f40ff;
+  --fourth: #25ddf5;
+  --fifth: #1fa2ff;
 }
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -145,9 +147,7 @@ table {
   border-spacing: 0;
 }
 
-h1 {
-  font-family: "Hylian Serif";
-}
+h1,
 h2,
 h3,
 h4,
@@ -169,110 +169,95 @@ main {
 /**FONT STYLES**/
 
 h1 {
+  margin-top: 4rem;
   font-size: 4rem;
   letter-spacing: 0.5rem;
   font-weight: 800;
-  /* color: #e0fdfd; */
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   text-align: center;
-  color: rgb(78, 215, 251);
+  color: var(--neutral-dark);
 }
 h2 {
   font-size: 3.157rem;
   font-weight: 600;
+  color: var(--neutral-dark);
 }
 h3 {
   font-size: 2.369rem;
   font-weight: 600;
+  color: var(--neutral-dark);
 }
 h4 {
   font-size: 2rem;
   font-weight: 800;
-  color: #4ed7fb;
+  color: var(--neutral-dark);
+  text-align: center;
 }
 p {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 2.5rem;
-  color: #e0fdfd;
+  color: var(--neutral-dark);
 }
 a {
   font-size: 1rem;
   font-weight: 800;
-  color: #e0fdfd;
-
+  color: var(--neutral-dark);
   letter-spacing: 0.125rem;
 }
 /**ELEMENT STYLES**/
 body {
   line-height: 1;
-  background-color: #1a1e28;
-  margin: 0 auto;
-  max-width: 900px;
+  background-color: var(--neutral-light);
 }
-hr {
-  background-image: linear-gradient(
-    to right,
-    rgba(100, 100, 100, 0.2),
-    rgb(78, 215, 251),
-    rgba(100, 100, 100, 0.2)
-  );
-  /* background: #aef8fe; */
-  height: 1px;
-  border: none;
+
+/**CLASS STYLES**/
+.header-container {
+  height: 100vh;
+}
+.banner-container {
+  background-image: url("../assets/images/banner.jpg");
+  background-size: cover;
+  height: 35vh;
+}
+.image-outer-container {
+  border-radius: 50%;
+  transform: translateY(-55%);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
-/**CLASS STYLES**/
-
+.image-inner-container {
+  width: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 120px;
+  border: 5px solid white;
+}
+.profile-image {
+  width: 100%;
+}
 .work-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
-
-  padding: 0 1rem;
+  height: 100%;
 }
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
 }
-.nav-container {
-  width: 100%;
-  text-align: center;
-}
-.nav-list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  place-content: center space-around;
-}
-.nav-item {
-  transition: text-shadow 0.5s ease, color 0.5s ease, font-weight 0.5s ease,
-    border-radius 0.5s ease, background 0.5s ease;
-  transition: text-shadow 0.5s ease-out, color 0.5s ease, font-weight 0.5s ease,
-    border-radius 0.5s ease, background 0.7s ease;
-  /* border-bottom: 1px solid #628586; */
-}
 
-.nav-item:hover {
-  text-shadow: 0px 0px 5px rgb(78, 215, 251);
-  /* border-bottom: 1px solid rgb(175, 245, 247); */
-  /* border-radius: 2px; */
-  cursor: pointer;
-  color: rgb(78, 215, 251);
-  /* background: rgba(78, 215, 251, 0.2); */
-}
-.background-container {
-  background-image: url("../assets/images/starwheel.svg");
-  background-size: 180%;
-  background-repeat: repeat;
-}
-.header-container {
+.name-about-container {
+  margin: 0 auto;
+  max-width: 900px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+
   justify-content: center;
 }
 .hr-container {
@@ -283,44 +268,36 @@ hr {
   height: 3%;
 }
 .main-content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
+  max-width: 900px;
+  height: 100vh;
+}
+.projects-list {
+  padding: 2rem;
+}
+.description-container {
+  margin: 3rem 0;
+  text-align: left;
 }
 .about-container {
-  margin: 3.5rem 0;
-  text-align: center;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 2rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
 }
 .link-list-container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-/* .link {
-  transition: border 0.5s ease, color 0.5s ease, border-radius 0.5s ease;
-} */
-/* .link:hover {
-  color: rgb(78, 215, 251);
-} */
-.image-container {
-  cursor: pointer;
-}
 
 .image {
-  border: 1px solid rgb(160, 236, 255);
   padding: 0.3rem;
   margin-bottom: 0.5rem;
   width: 100%;
-
-  border: 1px solid rgb(160, 236, 255);
-
-  border-radius: 2px;
-  transition: box-shadow 0.5s ease, border 0.5s ease;
 }
 
-.image:hover {
-  box-shadow: 0px 0px 10px rgb(78, 215, 251);
-}
 /**BREAKPOINT STYLES**/
 
 @media screen and (max-width: 599px) and (min-width: 0px) {
@@ -333,41 +310,20 @@ hr {
     grid-gap: 1rem;
   }
   p {
-    font-size: 1.25rem;
-    line-height: 2.25rem;
+    font-size: 1.05rem;
+    line-height: 1.75rem;
   }
   .work-container {
     height: unset;
   }
 }
+
 @media screen and (max-width: 904px) and (min-width: 600px) {
   h1 {
     font-size: 2.77rem;
   }
-}
-
-:root {
-  --background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
-  --first: #53f;
-  --second: #4553ff;
-  --third: #4f40ff;
-  --fourth: #25ddf5;
-  --fifth: #1fa2ff;
-}
-#stripes {
-  width: 100%;
-  height: 1vw;
-  background: var(--background);
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  transform: skewY(21deg);
-  transform-origin: 0;
-  z-index: -1;
-  opacity: 0.2;
-}
-
-#stripes span:nth-child(1) {
-  grid-column: span 1;
-  background: var(--first);
+  p {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+  }
 }

@@ -8,21 +8,22 @@
     <title>Gabe</title>
   </head>
   <body class="background-container">
-    <!-- <section class="background-container"></section> -->
     <header class="header-container">
-      <h1>Gabe Fontanilla</h1>
+      <div class="banner-container"></div>
+      <figure class="image-outer-container">
+        <div class="image-inner-container">
+          <img
+            src="./assets/images/me.jpg"
+            class="profile-image"
+            alt="Me, myself, and I!"
+          />
+        </div>
+      </figure>
 
-      <!-- <section class="hr-container">
-        <hr />
-      </section> -->
-      <section
-        style="
-          display: flex;
-          place-content: center space-between;
-          flex-direction: column;
-        "
-      >
-        <div class="about-container">
+      <section class="about-container">
+        <h1>Gabe Fontanilla</h1>
+
+        <div class="description-container">
           <p>
             Vivamus fringilla eu sapien eget cursus. Cras vel congue velit,
             vitae pellentesque nunc. Vestibulum vehicula odio eget purus
@@ -30,35 +31,21 @@
             pellentesque lorem, quis varius ligula. Praesent in nunc massa.
             Quisque quis quam a mauris porttitor dictum et a arcu. Cras et
             pulvinar purus. Ut sed purus imperdiet, ultricies nisl ut, ultrices
-            <u class="nav-item">mi.</u>
+            <u class="nav-item">mi</u>.
           </p>
         </div>
       </section>
     </header>
 
-    <main class="work-container">
-      <div class="main-content-container">
-        <noscript>
-          <main class="wrapper">
-            <div class="main-content-container">
-              <section>
-                <ol id="project-links">
-                  <li class="link-list-container">
-                    <div class="image-container"></div>
-                    <a href="https://pros.hnl.info"
-                      >Parks and Recreation Online System</a
-                    >
-                  </li>
-                </ol>
-              </section>
-            </div>
-          </main>
-        </noscript>
-
-        <section>
+    <main class="main-content-container">
+      <section class="work-container">
+        <div>
+          <h4>My Work</h4>
+        </div>
+        <div class="projects-list">
           <ol id="project-links" class="projects"></ol>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
   </body>
 
