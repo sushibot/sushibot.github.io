@@ -20,7 +20,10 @@
    License: none (public domain)
    RESET CSS
 */
-
+html,
+body {
+  overscroll-behavior-y: contain;
+}
 html,
 body,
 div,
